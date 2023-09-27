@@ -84,11 +84,20 @@ async function requestListener(_request, response) {
 
 1.6 indiquer ce que cette commande a modifié dans votre projet.
 
+Cette commande a ajouté les packages cross-env et nodemon.
+Elle les ajoute en tant que dépendances dans le fichier package.json.
+Elles ne seront donc utilisées que pendant le développement du projet.
+
 
 1.7 quelles sont les différences entre les scripts http-dev et http-prod ?
 
+Pour le lancement avec http-dev, le serveur se met automatiquement à jour grâce à nodemon.
+Tandis que pour http-prod, le serveur n'est mis à jour.
+
 
 1.8 donner les codes HTTP reçus par votre navigateur pour chacune des quatre pages précédentes.
+
+texte
 
 
 Questions: Partie 2
