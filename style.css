@@ -1,0 +1,87 @@
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=7080s0kllllaFw0g0qFqFg0w0aF */
+
+body {
+    background-color: #eecc99;
+    margin: 1%;
+}
+
+body > h2 {
+    margin-left: 45px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.backward {
+    background-color: white;
+	border: 3px orange solid;
+	border-radius: 5px;
+    color: darkorange;
+	font-size: 20px;
+    left: 0;
+	margin: 20px;
+	padding: 5px 25px;
+	position: fixed;
+	text-align: center center;
+    text-decoration: none;
+    top: 0;
+}
+
+.backward:hover {
+	font-weight: bold;
+	color: orange;
+}
+
+* > .link_site {                                                                /* div spéciale */
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    position: fixed;
+    padding: 5px;
+}
+
+.link_site {
+    align-items: center;
+    background-color: white;
+    bottom: 0;
+	border: 3px orange solid;
+	border-radius: 10px;
+    color: darkorange;
+    justify-content: center;
+	font-size: 24px;
+	padding: 15px;
+	text-align: center center;
+    text-decoration: none;
+    right: 0;
+}
+
+.link_site:hover {
+	font-weight: bold;
+	color: orange;
+}
+
+.sommaire {
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 20px;
+    padding: 0 20px 20px 20px;
+    margin-left: 100px;
+    max-width: 500px;
+}
+
+.menu > * > * {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-decoration: none;
+}
