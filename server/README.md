@@ -97,7 +97,13 @@ Tandis que pour http-prod, le serveur n'est mis à jour.
 
 1.8 donner les codes HTTP reçus par votre navigateur pour chacune des quatre pages précédentes.
 
-texte
+Status code pour http://localhost:8000/index.html : 200
+
+Status code pour http://localhost:8000/random.html : 200
+
+Status code pour http://localhost:8000/ : 404
+
+Status code pour http://localhost:8000/dont-exist : 404
 
 
 Questions: Partie 2
