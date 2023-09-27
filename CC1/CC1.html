@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+        <link rel="stylesheet" href="CC1.css" />
+        <script defer src="MIR_Nathan.js"></script>
+        <!--script defer src="CC1.js"></script-->
+        <title>CC1 - Des vaches et des nombres</title>
+    </head>
+
+    <body>
+        <h1>CC1 : Des vaches et des nombres</h1>
+
+        <div><a class="backward" href="../index.html">Revenir</a></div>
+        <div><a class="link_site" href="https://gharel.github.io/devweb/CC/CC1/devweb-2022-cc1.html" target="_blank">Cours</a></div>
+
+        <hr>
+
+        <section>
+            <h2 id="exo1">Exercice 1 : Devine le nombre !</h2>
+
+            <div class="form-example">
+                <div class="form-example">
+                    <label for="max-usr">Nombre max à chercher :</label>
+                    <input type="number" name="max-usr" id="max-usr" min="0" value="128" step="16" />
+                    <button id="start-btn">Lancer le jeu</button>
+                </div>
+
+                <div class="form-example">
+                    <label for="num-usr">Votre saisie : </label>
+                    <input type="number" name="num-usr" placeholder="0" id="num-usr" />
+                    <button id="guess-btn" disabled>Vérifier</button>
+                </div>
+            </div>
+
+            <code id="error" style="color: red"></code>
+            <code id="output"></code>
+            <code id="result"></code>
+        </section>
+
+        <br>
+
+        <section>
+            <h2 id="exo2">Exercice 2 : Vache qui tache</h2>
+
+            <p>
+                <input id="cow-btn" type="button" value="Vacher"></input>                   <!-- En faire une variable -->
+            </p>
+        </section>
+    </body>
+</html>

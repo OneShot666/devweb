@@ -1,0 +1,103 @@
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=7080s0kllllaFw0g0qFqFg0w0aF */
+
+body {
+    background-color: #eecc99;
+}
+
+body > h2 {
+    margin-left: 45px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+form.form-example {
+    display: table;
+}
+
+div.form-example {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+.cow {
+    pointer-events: none;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: absolute;
+    /* background-color: #bbb; */
+    /* border-radius: 50%; */
+}
+
+.backward {
+    background-color: white;
+	border: 3px orange solid;
+	border-radius: 5px;
+    color: darkorange;
+	font-size: 20px;
+    left: 0;
+	margin: 20px;
+	padding: 5px 25px;
+	position: fixed;
+	text-align: center center;
+    text-decoration: none;
+    top: 0;
+}
+
+.backward:hover {
+	font-weight: bold;
+	color: orange;
+}
+
+.link_site {
+	background-color: white;
+	border: 3px orange solid;
+	border-radius: 10px;
+	bottom: 0;
+    color: darkorange;
+	font-size: 24px;
+	margin: 20px;
+	padding: 15px;
+	position: fixed;
+	right: 0;
+	text-align: center center;
+    text-decoration: none;
+}
+
+.link_site:hover {
+	font-weight: bold;
+	color: orange;
+}
+
+.sommaire {
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 20px;
+    padding: 0 20px 20px 20px;
+    margin-left: 100px;
+    max-width: 500px;
+}
+
+.menu > * > * {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-decoration: none;
+}
