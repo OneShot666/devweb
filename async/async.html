@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <script defer src="async.js" type="text/javascript"></script>
+        <!-- script defer src="chaining.js" type="text/javascript"></script-->
+        <!-- script defer src="executor.js" type="text/javascript"></script-->
+        <!-- script defer src="settimeout.js" type="text/javascript"></script-->
+        <!-- script defer src="throttle.js" type="text/javascript"></script-->
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+        <link rel="stylesheet" href="../style.css"/>
+        <title>Chargements asynchrones</title>
+    </head>
+
+    <body>
+        <h1>Exemples de chargement asynchrone</h1>
+
+        <div><a class="backward" href="../index.html">Revenir</a></div>
+        <div><a class="link_site" href="https://gharel.github.io/devweb/CM/CM3_exemples/" target="_blank">Cours</a></div>
+
+        <hr>
+
+        <h2>Charger un fichier JSON</h2>
+
+        <p>
+            Voir <a href="data" target="_blank">la liste des fichiers sur le serveur</a>. Attention, pensez à
+            <strong>lancer un serveur pour accéder à cette page</strong>, sinon les requêtes <code>fetch</code>
+            ne fonctionneront pas.
+        </p>
+
+        <input type="text" id="input" value="ex2.json" />
+        <button id="fetch-promise-btn">Fetch (promise)</button>
+        <button id="fetch-await-btn">Fetch (async/await)</button>
+        <button id="reset-btn">Reset</button>
+
+        <pre id="content"></pre>
+    </body>
+</html>
