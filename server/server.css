@@ -1,0 +1,37 @@
+/* Style */
+
+body {
+
+}
+
+h1 {
+
+}
+
+section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    align-items: center;
+    background: #fdc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    margin: 5px;
+    min-height: 20px;
+    min-width: 100px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
