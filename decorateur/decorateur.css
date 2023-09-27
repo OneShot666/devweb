@@ -1,0 +1,10 @@
+/* Style */
+
+.menu > * > * {
+    color: black !important;
+}
+
+.menu > * > *: hover {                                                          /* Doesn't work */
+    color: darkblue !important;
+    text-decoration: underline !important;
+}

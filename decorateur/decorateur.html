@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script defer src="decorateur.js"></script>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+        <link rel="stylesheet" href="../style.css"/>
+        <link rel="stylesheet" href="decorateur.css"/>
+        <title>Decorateur</title>
+    </head>
+
+    <body>
+        <h1>Décorateur</h1>
+
+        <div><a class="backward" href="../index.html">Revenir</a></div>
+        <div><a class="link_site" href="https://gharel.github.io/devweb/TP/TP1/" target="_blank">Cours</a></div>
+
+        <hr>
+
+        <section>
+            <h2 id="exo1">Vocabulaire : </h2>
+
+            <ol class="menu">
+                <ul><a href="https://fr.wikipedia.org/wiki/Décorateur_(patron_de_conception)"
+                    target="_blank" title="Modifie une fonction">Décorateur</a></ul>
+                <ul><a href="https://python.doctor/page-decorateurs-decorator-python-cours-debutants#:~:text=Un%20décorateur%20est%20une%20fonction,code%20à%20plusieurs%20fonctions%20existantes."
+                    target="_blank" title="S'utilise avec @">Décorateur en Python</a></ul>
+                <ul><a href="https://fr.wikipedia.org/wiki/Interface_de_programmation"
+                    target="_blank" title="Interface de Programmation Applicative">API</a></ul>
+                <ul><a href="https://javascript.info/rest-parameters-spread"
+                    target="_blank" title="Utilisation de la fonction alert en javascript">Alert en Js</a></ul>
+            </ol>
+        </section>
+
+        <br>
+
+        <section>
+            <h2 id="exo1">Exercice 1 : Chrono</h2>
+
+            <p>
+                <span id="output1"></span>
+            </p>
+
+            <p>
+                <label for="size-selector">Taille de police</label>
+                <input id="size-selector" type="number" name="size-selector" value="12" min="0" max="100"
+                style="max-width: 40px;"/>px
+                <button id="set_font_size">Ajouter modificateur de taille</button>
+            </p>
+        </section>
+
+        <br>
+
+        <section>
+            <h2 id="exo2">Exercice 2 : Once</h2>
+
+            <p>
+                <span id="output2"></span>
+            </p>
+
+            <p>
+                <input type="text" id="input2" value="" />
+                <button id="other">Exécuter</button>
+                <button id="reset2">Réinitialiser</button>
+            </p>
+        </section>
+
+        <br>
+
+        <section>
+            <h2 id="exo3">Exercice 3 : Python</h2>
+
+            <p>
+                <span id="output3"></span>
+            </p>
+
+            <p>
+                <input type="text" id="input3" value="" />
+                <button id="python">Exécuter</button>
+                <button id="reset3">Réinitialiser</button>
+            </p>
+        </section>
+    </body>
+</html>
