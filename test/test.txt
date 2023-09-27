@@ -1,0 +1,20 @@
+// ---------------------- Zone de test (vars) ----------------------------------
+/* const creerFonction = function () { const nom = "Mozilla";                   // affiche 'Mozilla'
+    return function () { console.log(nom); }; };
+const maFonction = creerFonction();
+console.log(maFonction()); */                                                   // affiche undefined
+
+/* function sayHello(person) { return function (str) { console.log("Hi " + person + ", " + str); }; }
+let helloBuddy = sayHello("Buddy");                                             // vars diffs (envmt propre)
+let helloGuys = sayHello("Guys");
+helloBuddy("c'mon");
+helloGuys("how do you do?"); */
+
+/* function makeCounter() { let count = 0;
+    return function () { console.log(count); count += 1; }; }
+let counter_1 = makeCounter(); */                                               // comptera +1 à chaque appel de la var
+
+// IIFE (immediate function)
+(function () { console.log("Bienvenue !"); })();
+(() => { console.log("Démarrage immédiat !"); })();
+// -----------------------------------------------------------------------------

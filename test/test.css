@@ -1,0 +1,18 @@
+/* Style */
+
+:root {
+    /* Déclaration de variables */
+    --bloc_size: 100px;
+    --bloc_speed: 5;
+}
+
+.moveableDiv {
+    background-color: #3498db;
+    border-radius: 50%;                                                         /* Make it a circle */
+    height: var(--bloc_size);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: var(--bloc_size);
+}
