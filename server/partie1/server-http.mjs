@@ -9,7 +9,7 @@ async function requestListener(request, response) {
     response.setHeader("Content-Type", "text/html");
     try {
         const splitted_url = request.url.split("/");
-        console.log(splitted_url);
+        logger.info(splitted_url);
         const contents = await fs.readFile("index.html", "utf8");
         switch (splitted_url[1]) {
             case "index.html":
@@ -30,7 +30,7 @@ async function requestListener(request, response) {
                 return response.end(`<html><p>404: NOT FOUND</p></html>`);
         }
     } catch (error) {
-        console.error(error);
+        logger.error(error);
         response.writeHead(500);
         return response.end(`<html><p>500: INTERNAL SERVER ERROR</p></html>`);
     }
@@ -38,7 +38,7 @@ async function requestListener(request, response) {
 
 const server = http.createServer(requestListener);
 server.listen(port, host, () => {
-  console.log(`Server is running on http://${host}:${port}`);
+  logger.info(`Server is running on http://${host}:${port}`);
 });
 
-console.log("NODE_ENV =", process.env.NODE_ENV);
+logger.info("NODE_ENV =", process.env.NODE_ENV);

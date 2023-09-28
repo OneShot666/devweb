@@ -1,5 +1,4 @@
 "use strict";
-console.info("Js functions loading...");
 
 /* Cours initial */
 function requestListener0(_request, response) {
@@ -23,7 +22,7 @@ function requestListener2(_request, response) {
       response.writeHead(200);
       return response.end(contents);
     })
-    .catch((error) => console.error(error));
+    .catch((error) => console.log(error));
 }
 
 /* Question 1.5 */
@@ -34,10 +33,8 @@ async function requestListener3(_request, response) {
       response.writeHead(200);
       return response.end(contents);
   } catch (error) {
-      console.error(error);
+      console.log(error);
       response.writeHead(500);                                                // Renvoie une erreur 500
       return response.end("Code d'erreur 500: Fichier introuvable !");
   }
 }
-
-console.info("Js functions loaded !");
