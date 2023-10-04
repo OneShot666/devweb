@@ -8,6 +8,15 @@
     </head>
 
     <body>
-        <%= content %>
+        <ul>
+            <% urls.forEach(function(url) { %>                                  <!-- Display each url -->
+                <li><%= url.short %> : <%= url.full %></li>
+            <% }); %>
+        </ul>
+        <% urls %>
+
+        <br>
+
+        <%- test %>                                                             <!-- < % - : Get html code -->
     </body>
 </html>

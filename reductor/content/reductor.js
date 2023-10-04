@@ -1,6 +1,6 @@
 /* Script dans content */
 
-console.log("Js reductor functions loading...");                                // ! To remove at the end
+// console.log("Js reductor functions loading...");                                // ! To remove at the end
 
 // const url_form = document.getElementById('url_form');
 const url_long = document.getElementById('url_to_reduct');
@@ -26,7 +26,6 @@ function generateShortUrl(url, lgr=lgr_default) {                               
 reduct_button.addEventListener("click", async function (e) {                    // Give reduced url
     e.preventDefault();                                                         // Prevent from default behavior
 
-    console.log("ui");
     error_div.innerHTML = "";
     const url_value = url_long.value;
     const lgr_value = lgr.value;
@@ -58,7 +57,7 @@ reduct_button.addEventListener("click", async function (e) {                    
             }, body: JSON.stringify({ full_url: url_value, shorten_url: short_url })
         })).json();
 
-        console.log(request);
+        // console.log(request);
     }
 });
 
@@ -77,4 +76,4 @@ url_long.addEventListener("input", function () {                                
     else { clear_url.style.opacity = 0.2; }
 })
 
-console.log("Js reductor functions loaded.");                                   // ! To remove at the end
+// console.log("Js reductor functions loaded.");                                   // ! To remove at the end

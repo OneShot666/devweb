@@ -1,6 +1,6 @@
 /* Script */
 
-console.log("Js reductor functions loading...");                                // ! To remove at the end
+// console.log("Js reductor functions loading...");                                // ! To remove at the end
 
 // const url_form = document.getElementById('url_form');
 const url_long = document.getElementById('url_to_reduct');
@@ -74,4 +74,4 @@ url_long.addEventListener("input", function () {                                
     else { clear_url.style.opacity = 0.2; }
 })
 
-console.log("Js reductor functions loaded.");                                   // ! To remove at the end
+// console.log("Js reductor functions loaded.");                                   // ! To remove at the end

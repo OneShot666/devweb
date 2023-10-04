@@ -2,7 +2,7 @@
   "name": "reductor",
   "version": "1.0.0",
   "description": "Un reducteur d'url",
-  "main": "reductor-http.mjs",
+  "main": "server.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env DEBUG=app PORT=8000 nodemon server.mjs"
