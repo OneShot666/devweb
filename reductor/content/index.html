@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script defer src="reductor.js"></script>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="reductor.css"/>
+        <title>Réducteur d'url</title>
+    </head>
+
+    <!-- Projet : dans content
+    Mail: guillaume.harel@skazy.nc
+    Objet mail : MIR_Nathan_CC4
+    Vérifier l'indentation
+    Retirer les console.log (ne pas mettre de require en js -> use package.json, etc...)
+    Améliorer l'UX et l'UI
+    Url réduite doit être courte, unique et fonctionnelle
+    Upgrade fichier urls.json
+    Mettre le projet sur github
+    Envoyer le projet en ligne
+    Vérifier que le projet ne renvoie pas d'erreur en ligne 
+    -->
+
+    <!-- Informations : 
+    GET / renvoie le nombre de liens déjà créés;
+    POST / : créée un lien réduit à partir d’une URL longue. Vérifie que l’URL soit syntaxiquement valide
+    GET /status/:url : donne l’état du lien : date de création, origine et nombre de visites
+    GET /:url : redirige le lien raccourci vers le lien donné lors de la création 
+
+    Pour database : use SQLite ou Mongo DB
+    Pour éviter fetch error : publier API et formulaire séparément
+    Pour la publication : mettre sur GitHub Pages et Netlify
+    -->
+
+    <body>
+        <h1>Réducteur d'url</h1>
+
+        <div><a class="backward" href="../index.html">Revenir</a></div>
+        <div><a class="link_site" href="https://gharel.github.io/devweb/TP/TP6/" target="_blank">Cours</a></div>
+
+        <hr>
+
+        <section class="welcome">
+            <h2>Bienvenue sur Url Reductor</h2>
+
+            <div>
+                <p>
+                    Vous en avez marre de taper de longues urls illisibles avec des caractères compliqués ?<br>
+                    N'attendez plus, ce site est fait pour vous !<br>
+                    Entrez votre url dès maintenant dans le champ juste en-dessous et obtenez 
+                    une nouvelle adresse fraîchement créée rien que pour vous.<strong>*</strong>
+                </p>
+            </div>
+
+            <div class="description">
+                <h5>Charte de confidentialité</h5>
+
+                <p>
+                    <strong>*Ce site décline toutes responsabilités en cas de redirection
+                    vers un site malveillant ou quelquonque arnaque.
+                    Ce site n'est pas un site officiel ou appartenant à une association officielle.
+                    Tout lien avec un site proposant des services du même genre serait forfuit.
+                    L'utilisateur de ce site consent à ce que ce site utilise ses informations personnelles 
+                    à des fins commerciales. <br>Ces informations peuvent être : 
+                    son prénom, son nom, son pseudonyme, son âge, son genre présumé, son adresse mail, 
+                    son numéro de téléphone, son adresse physique, ses bulletins de notes, ses cours de piano, 
+                    son groupe sanguin, son numéro de carte bancaire, son historique en navigation privée,
+                    la date de sa mort ou d'autres.
+                    </strong>
+                </p>
+
+                <button class="horror">Je signe de mon sang</button>
+
+                <div class="sparkle"></div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="formulaire">
+            <h2>Entrez votre url ici</h2>
+
+            <form id="url_form" method="post" action="./reduction">
+                <label for="">Url</label>
+                <input id="url_to_reduct" type="text" placeholder="http://domain.com/nom_complexe_url" 
+                maxlength="100" required>
+                <span id="clear_url" class="clear_url">x</span>
+                <input id="lgr" type="number" min="0" max="100" value="5" required>
+
+                <button id="reduct_button" type="submit">Reduce</button>
+                <button id="reset_button" type="button">Reset</button>
+            </form>
+            
+            <br>
+
+            <div id="short_url_div"></div>
+
+            <br>
+
+            <div id="error_div" class="error_div"></div>
+        </section>
+
+        <br><hr><br>
+
+        <section>
+            <div>
+                <a href="http://localhost:8000" target="_blank"><button>Serveur</button></a>
+            </div>
+        </section>
+    </body>
+</html>

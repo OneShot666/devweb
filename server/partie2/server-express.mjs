@@ -17,8 +17,8 @@ logger.setLevel(logger.levels.DEBUG);                                           
 app.use(express.static("static"));
 
 app.get("/random/:nb", async function (request, response, next) {
-    const length = Number.parseInt(request.params.nb, 10);
-    if (! Number.isNaN(length)) {
+    const length = Number.parseInt(request.params.nb, 10);                      // Récupère nombre
+    if (! Number.isNaN(length)) {                                               // Vérifie si nombre est un nombre
         const contents = Array.from({ length })
             .map((_) => `${Math.floor(100 * Math.random())} `);
             // .join("\n");
